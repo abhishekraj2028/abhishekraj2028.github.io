@@ -60,14 +60,12 @@
 
     .footer{margin-top:22px;color:var(--muted);font-size:14px;text-align:center}
 
-    /* a11y focus */
     a,button,[tabindex] { outline: none; }
     a:focus-visible, button:focus-visible, [tabindex]:focus-visible{ box-shadow:0 0 0 3px var(--ring); border-radius:10px }
 
     .tags{display:flex;flex-wrap:wrap;gap:8px}
     .tag{border:1px solid rgba(148,163,184,.25);padding:6px 10px;border-radius:999px;font-size:12px;color:#cbd5e1;background:rgba(255,255,255,.02)}
 
-    /* small badge row */
     .badges{display:flex;gap:8px;flex-wrap:wrap}
     .badge{font-size:12px;color:#a5b4fc;background:rgba(99,102,241,.1);border:1px solid rgba(99,102,241,.2);padding:6px 10px;border-radius:999px}
 
@@ -132,10 +130,12 @@
           <span class="tag">Scalable Systems</span>
           <span class="tag">Web Engineering</span>
         </div>
-        <p class="muted">Personal hobbies (customize these!)</p>
+        <p class="muted">Personal hobbies</p>
         <div class="tags">
-          <span class="tag">(Add a hobby)</span>
-          <span class="tag">(Add another)</span>
+          <span class="tag">Photography</span>
+          <span class="tag">Traveling</span>
+          <span class="tag">Cooking</span>
+          <span class="tag">Playing Chess</span>
         </div>
       </section>
 
@@ -156,7 +156,7 @@
       <section class="card section" aria-labelledby="funfact">
         <h2 id="funfact">Fun Fact</h2>
         <p>
-          <em>Replace this with a memorable fun fact about you (e.g., a unique hobby, a surprising skill, or a quirky achievement) so classmates can remember you!</em>
+          I once built a small AI bot that could write personalized poems based on the user’s mood—it even rhymed surprisingly well! That project got me interested in natural language processing and creative AI applications.
         </p>
       </section>
     </div>
@@ -165,7 +165,6 @@
   </div>
 
   <script>
-    // Just a tiny enhancement
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
